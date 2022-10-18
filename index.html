@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password verify</title>
+</head>
+<body>
+  <script>
+   function pass()
+{
+var coba = 1;
+ do
+  {
+   p = prompt("SILAHKAN MASUKAN PASSWORD","");
+   if (p=="Lynch")
+    {
+      alert("Selamat Datang Lynch");
+      window.open("https://g-chan.in/chrome/");
+      break;
+    }
+   else
+    {
+      alert("Password Salah !!! Ulangi lagi.");
+    }
+   if (coba==3)
+    {
+      alert("maaf, kesempatan anda hanya 3 kali");
+     history.go(-1);
+    }
+  coba=coba+1;
+  }
+ while (coba<=3)
+}             
+  </script>
+          <form method="post">
+          <div class="container">
+          <h1>Welcome</h1>
+          <label>Silahkan klik tombol lanjutkan</label><br>
+          <label> </label><br>
+          <input type="button" value="Lanjutkan" onclick="pass()"><br>
+          </form>
+        </div>     
+</body>
+   <style>
+    *{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    height: 100vh;
+    background-image: url(https://telegra.ph/file/77594b12f3ddaba6241f4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 20px 25px;
+    width: 300px;
+
+    background-color: rgba(0,0,0,.7);
+    box-shadow: 0 0 10px rgba(255,255,255,.3);
+}
+.container h1{
+    text-align: left;
+    color: #fafafa;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    border-bottom: 4px solid #2979ff;
+}
+.container label{
+    text-align: left;
+    color: #90caf9;
+}
+.container form input{
+    width: calc(100% - 20px);
+    padding: 8px 10px;
+    margin-bottom: 15px;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid #2979ff;
+    color: #fff;
+    font-size: 20px;
+}
+.container form button{
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    background-color:#2979ff;
+    font-size: 18px;
+    color: #fafafa;
+}
+.container input{
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    background-color:#2979ff;
+    font-size: 18px;
+    color: #fafafa;
+}
+    </style>
+</html>
